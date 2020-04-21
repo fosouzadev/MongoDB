@@ -23,18 +23,18 @@ db.Professores.insertMany([
 ])
 
 db.Cursos.insertMany([
-    { _id:2, Nome:'Gastronomia', DuracaoAnos:6.5, ProfessorId:ObjectId("5e9ef3fc7e126ecba1e13748") },
-    { _id:3, Nome:'Contabilidade', DuracaoAnos:4.5, ProfessorId:ObjectId("5e9ef3fc7e126ecba1e13748") },
-    { _id:4, Nome:'Fisioterapia', DuracaoAnos:2, ProfessorId:ObjectId("5e9ef3fc7e126ecba1e13749") },
-    { _id:5, Nome:'Radiologia', DuracaoAnos:1.5, ProfessorId:ObjectId("5e9ef3fc7e126ecba1e13749") },
-    { _id:6, Nome:'Análise de Sistemas', DuracaoAnos:4, ProfessorId:ObjectId("5e9ef3fc7e126ecba1e1374a") },
-    { _id:7, Nome:'Banco de dados', DuracaoAnos:4.5, ProfessorId:ObjectId("5e9ef3fc7e126ecba1e1374b") },
-    { _id:8, Nome:'Arquiteto de software', DuracaoAnos:8, ProfessorId:ObjectId("5e9ef3fc7e126ecba1e1374b") },
-    { _id:9, Nome:'Engenharia de software', DuracaoAnos:6, ProfessorId:ObjectId("5e9ef3fc7e126ecba1e1374b") },
-    { _id:10, Nome:'Psicologia', DuracaoAnos:3, ProfessorId:ObjectId("5e9ef3fc7e126ecba1e1374c") },
-    { _id:11, Nome:'Pedagogia', DuracaoAnos:2, ProfessorId:ObjectId("5e9ef3fc7e126ecba1e1374d") },
-    { _id:12, Nome:'Administração', DuracaoAnos:2, ProfessorId:ObjectId("5e9ef3fc7e126ecba1e1374d") },
-    { _id:13, Nome:'Engenharia', DuracaoAnos:7, ProfessorId:ObjectId("5e9ef3fc7e126ecba1e1374e") }
+    { _id:2, Nome:'Gastronomia', DuracaoAnos:6.5, ProfessorId:1 },
+    { _id:3, Nome:'Contabilidade', DuracaoAnos:4.5, ProfessorId:1 },
+    { _id:4, Nome:'Fisioterapia', DuracaoAnos:2, ProfessorId:2 },
+    { _id:5, Nome:'Radiologia', DuracaoAnos:1.5, ProfessorId:2 },
+    { _id:6, Nome:'Análise de Sistemas', DuracaoAnos:4, ProfessorId:3 },
+    { _id:7, Nome:'Banco de dados', DuracaoAnos:4.5, ProfessorId:4 },
+    { _id:8, Nome:'Arquiteto de software', DuracaoAnos:8, ProfessorId:4 },
+    { _id:9, Nome:'Engenharia de software', DuracaoAnos:6, ProfessorId:4 },
+    { _id:10, Nome:'Psicologia', DuracaoAnos:3, ProfessorId:5 },
+    { _id:11, Nome:'Pedagogia', DuracaoAnos:2, ProfessorId:6 },
+    { _id:12, Nome:'Administração', DuracaoAnos:2, ProfessorId:6 },
+    { _id:13, Nome:'Engenharia', DuracaoAnos:7, ProfessorId:7 }
 ])
 
 db.CursosAlunos.insertMany([
