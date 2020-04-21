@@ -37,3 +37,35 @@ INSERT INTO dbo.Cursos (Nome, DuracaoAnos, ProfessorId) VALUES
 ('Administração', 2, 6),
 ('Engenharia', 7, 7)
 GO
+
+INSERT INTO dbo.CursosAlunos (AlunoId, CursoId) VALUES
+(1, 2 ),
+(2, 2 ),
+(3, 2 ),
+(4, 2 ),
+(1, 3 ),
+(5, 3 ),
+(6, 3 ),
+(2, 4 ),
+(7, 4 ),
+(8, 4 ),
+(3, 5 ),
+(4, 5 ),
+(5, 5 ),
+(6, 6 ),
+(7, 6 ),
+(8, 7 ),
+(2, 8 ),
+(3, 8 ),
+(4, 8 ),
+(5, 8 ),
+(6, 8 ),
+(2, 9 ),
+(8, 9 ),
+(7, 10),
+(6, 10),
+(5, 11),
+(1, 11),
+(4, 12),
+(3, 12)
+GO
