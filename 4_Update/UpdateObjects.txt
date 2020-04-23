@@ -15,3 +15,5 @@ db.Cursos.updateMany(
 )
 
 db.Cursos.updateMany({ Valor: 0 }, { $set: { Valor: 5500 } })
+
+db.Cursos.updateMany({ ProfessorId: 5 }, { $set: { ProfessorId: null } })

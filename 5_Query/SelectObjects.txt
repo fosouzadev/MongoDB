@@ -1,0 +1,20 @@
+use FaculdadeDB
+
+db.Cursos.find()
+
+db.Cursos.find({ Valor: 2000})
+
+db.Cursos.find({ Valor: { $lt: 5000 } })
+
+db.Cursos.find({ Valor: { $gt: 4000 } })
+
+db.Cursos.find({ Valor: { $gte: 5000 } })
+
+db.Cursos.find({ Valor: { $lte: 5000 } })
+
+db.Cursos.find({ Valor: { $gte: 3000, $lte: 4000 } })
+db.Cursos.find({ $and: [ 
+    { Valor: { $gte: 3000 } }, 
+    { Valor: { $lte: 4000 } } 
+] })
+

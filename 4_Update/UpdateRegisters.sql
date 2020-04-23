@@ -15,3 +15,6 @@ GO
 
 UPDATE dbo.Cursos SET Valor = 5500 WHERE Valor = 0
 GO
+
+UPDATE dbo.Cursos SET ProfessorId = NULL WHERE ProfessorId = 5
+GO

@@ -1,41 +1,41 @@
 USE FaculdadeDB
 GO
 
-INSERT INTO dbo.Alunos (Nome, DataNasc, Celular, Email) VALUES
-('Maria Aparecida de Santos', '1989-07-13', '(11) 97845-4512', 'maria@dev.com.br'),
-('João Mendes de Fibini', '1989-07-13', '(11) 97845-4512', 'joão@dev.com.br'),
-('José Pinto', '1989-07-13', '(11) 97845-4512', 'josé@dev.com.br'),
-('Juliana Alencar', '1989-07-13', '(11) 97845-4512', 'juliana@dev.com.br'),
-('Patricia Brito', '1989-07-13', '(11) 97845-4512', 'patricia@dev.com.br'),
-('Luiza Kaori Sato', '1989-07-13', '(11) 97845-4512', 'luiza@dev.com.br'),
-('Sabrina Santos de Souza', '1989-07-13', '(11) 97845-4512', 'sabrina@dev.com.br'),
-('Felipe Oliveira de Souza', '1989-07-13', '(11) 97845-4512', 'felipe@dev.com.br')
+INSERT INTO dbo.Alunos (Id, Nome, DataNasc, Celular, Email) VALUES
+(1, 'Maria Aparecida de Santos', '1989-07-13', '(11) 97845-4512', 'maria@dev.com.br'),
+(2, 'João Mendes de Fibini', '1989-07-13', '(11) 97845-4512', 'joão@dev.com.br'),
+(3, 'José Pinto', '1989-07-13', '(11) 97845-4512', 'josé@dev.com.br'),
+(4, 'Juliana Alencar', '1989-07-13', '(11) 97845-4512', 'juliana@dev.com.br'),
+(5, 'Patricia Brito', '1989-07-13', '(11) 97845-4512', 'patricia@dev.com.br'),
+(6, 'Luiza Kaori Sato', '1989-07-13', '(11) 97845-4512', 'luiza@dev.com.br'),
+(7, 'Sabrina Santos de Souza', '1989-07-13', '(11) 97845-4512', 'sabrina@dev.com.br'),
+(8, 'Felipe Oliveira de Souza', '1989-07-13', '(11) 97845-4512', 'felipe@dev.com.br')
 GO
 
-INSERT INTO dbo.Professores (Nome, Celular, Email) VALUES
-('Mariana Jujuba', '(11) 97845-4512', 'mariana@dev.com.br'),
-('Marcos Cesar Augustos', '(11) 97845-4512', 'marcos@dev.com.br'),
-('Marcelo Xavier', '(11) 97845-4512', 'marcelo@dev.com.br'),
-('Ana Maria Bunda', '(11) 97845-4512', 'ana@dev.com.br'),
-('Roneiva Runiania', '(11) 97845-4512', 'roneiva@dev.com.br'),
-('Cecilia Batista', '(11) 97845-4512', 'cecilia@dev.com.br'),
-('Paulo Fabiosi', '(11) 97845-4512', 'paulo@dev.com.br'),
-('Luciana Murilais', '(11) 97845-4512', 'luciana@dev.com.br')
+INSERT INTO dbo.Professores (Id, Nome, Celular, Email) VALUES
+(1, 'Mariana Jujuba', '(11) 97845-4512', 'mariana@dev.com.br'),
+(2, 'Marcos Cesar Augustos', '(11) 97845-4512', 'marcos@dev.com.br'),
+(3, 'Marcelo Xavier', '(11) 97845-4512', 'marcelo@dev.com.br'),
+(4, 'Ana Maria Bunda', '(11) 97845-4512', 'ana@dev.com.br'),
+(5, 'Roneiva Runiania', '(11) 97845-4512', 'roneiva@dev.com.br'),
+(6, 'Cecilia Batista', '(11) 97845-4512', 'cecilia@dev.com.br'),
+(7, 'Paulo Fabiosi', '(11) 97845-4512', 'paulo@dev.com.br'),
+(8, 'Luciana Murilais', '(11) 97845-4512', 'luciana@dev.com.br')
 GO
 
-INSERT INTO dbo.Cursos (Nome, DuracaoAnos, ProfessorId) VALUES
-('Gastronomia', 6.5, 1),
-('Contabilidade', 4.5, 1),
-('Fisioterapia', 2, 2),
-('Radiologia', 1.5, 2),
-('Análise de Sistemas', 4, 3),
-('Banco de dados', 4.5, 4),
-('Arquiteto de software', 8, 4),
-('Engenharia de software', 6, 4),
-('Psicologia', 3, 5),
-('Pedagogia', 2, 6),
-('Administração', 2, 6),
-('Engenharia', 7, 7)
+INSERT INTO dbo.Cursos (Id, Nome, DuracaoAnos, ProfessorId) VALUES
+(2,  'Gastronomia', 6.5, 1),
+(3,  'Contabilidade', 4.5, 1),
+(4,  'Fisioterapia', 2, 2),
+(5,  'Radiologia', 1.5, 2),
+(6,  'Análise de Sistemas', 4, 3),
+(7,  'Banco de dados', 4.5, 4),
+(8,  'Arquiteto de software', 8, 4),
+(9,  'Engenharia de software', 6, 4),
+(10, 'Psicologia', 3, 5),
+(11, 'Pedagogia', 2, 6),
+(12, 'Administração', 2, 6),
+(13, 'Engenharia', 7, 7)
 GO
 
 INSERT INTO dbo.CursosAlunos (AlunoId, CursoId) VALUES

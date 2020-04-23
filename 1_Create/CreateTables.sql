@@ -5,7 +5,7 @@ USE FaculdadeDB
 GO
 
 CREATE TABLE dbo.Alunos (
-    Id          bigint        not null identity(1,1) primary key,
+    Id          bigint        not null primary key,
     Nome        nvarchar(150) not null,
     DataNasc    date          not null,
     Celular     nvarchar(20)  not null,
@@ -15,7 +15,7 @@ CREATE TABLE dbo.Alunos (
 GO
 
 CREATE TABLE dbo.Professores (
-    Id          bigint        not null identity(1,1) primary key,
+    Id          bigint        not null primary key,
     Nome        nvarchar(150) not null,
     Celular     nvarchar(20)  not null,
     Email       nvarchar(50)  not null,
@@ -24,10 +24,10 @@ CREATE TABLE dbo.Professores (
 GO
 
 CREATE TABLE dbo.Cursos (
-    Id          bigint        not null identity(1,1) primary key,
+    Id          bigint        not null primary key,
     Nome        nvarchar(150) not null,
-    DuracaoAnos numeric(1,1)   not null,
-    ProfessorId bigint        not null,
+    DuracaoAnos numeric(2,1)  not null,
+    ProfessorId bigint        ,
     DataCriacao date          not null default(getdate())    
 )
 GO
