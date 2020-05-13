@@ -18,3 +18,12 @@ db.Cursos.find({ $and: [
     { Valor: { $lte: 4000 } } 
 ] })
 
+// Consulta com like no SQL é usada como expressão regular no mongodb, estudar regex
+
+db.Cursos.find({ DuracaoAnos: { $in: [ 2,3,4 ] } })
+
+db.Cursos.find({ DuracaoAnos: { $not: { $in: [ 2,3,4 ] } } })
+
+db.Cursos.find({ ProfessorId: null })
+
+db.Cursos.find({ ProfessorId: { $ne: null } })

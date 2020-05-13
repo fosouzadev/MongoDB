@@ -61,10 +61,10 @@ db.CursosAlunos.insertMany([
     { AlunoId: 6, CursoId: 8 },
     { AlunoId: 2, CursoId: 9 },
     { AlunoId: 8, CursoId: 9 },
-    { AlunoId: 7, CursoId: 1 },
-    { AlunoId: 6, CursoId: 1 },
-    { AlunoId: 5, CursoId: 1 },
-    { AlunoId: 1, CursoId: 1 },
-    { AlunoId: 4, CursoId: 1 },
-    { AlunoId: 3, CursoId: 1 }
+    { AlunoId: 7, CursoId: 10 },
+    { AlunoId: 6, CursoId: 10 },
+    { AlunoId: 5, CursoId: 11 },
+    { AlunoId: 1, CursoId: 11 },
+    { AlunoId: 4, CursoId: 12 },
+    { AlunoId: 3, CursoId: 12 }
 ])
