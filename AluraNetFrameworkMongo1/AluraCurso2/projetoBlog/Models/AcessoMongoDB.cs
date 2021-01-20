@@ -5,7 +5,7 @@ namespace projetoBlog.Models
 {
     public class AcessoMongoDB
     {
-        private string _connectionString = "mongodb://LearningUser:2VECYyiQ9NfRG49D@learningcluster0-shard-00-00.5xgx4.mongodb.net:27017,learningcluster0-shard-00-01.5xgx4.mongodb.net:27017,learningcluster0-shard-00-02.5xgx4.mongodb.net:27017/library?ssl=true&replicaSet=atlas-xtmsgr-shard-0&authSource=admin&retryWrites=true&w=majority";
+        private string _connectionString = "INSERIR_CONNECTION_STRING";
         private string _databaseName = "blogNet";
         private string _collectionUsers = "users";
         private string _collectionPublications = "publications";
